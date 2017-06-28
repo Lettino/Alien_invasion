@@ -14,7 +14,9 @@ class Ship():
         self.move_right = False
         self.move_left = False
         # 飞船速度因子
-
+    #让飞船在屏幕中央居中
+    def center_ship(self):
+        self.center = self.screen_rect.centerx
 
     def update(self):
         if self.move_right and self.rect.right < self.screen_rect.right:
